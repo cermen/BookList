@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>독서록</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -12,17 +13,20 @@
         <p class="title__sub">책을 읽고 느낀 점들을 담아 주세요.</p>
     </header>
     <section class="section">
-        <form action="" class="new-article">
-            <div class="new-article__link">
-                <span>링크</span>
-                <input type="text" class="link">
-            </div>
-            <div class="new-article__content">
-                <span>느낀점</span>
-                <input type="text" class="content">
-            </div>
-        </form>
-        <button class="post">올리기</button>
+        <div class="section__form">
+            <form action="" class="new-article">
+                <div class="new-article__link">
+                    <div class="new-article__label">링크</div>
+                    <input type="text" class="link">
+                </div>
+                <div class="new-article__content">
+                    <div class="new-article__label">느낀점</div>
+                    <div><input type="text" class="content"></div>
+                </div>
+                <div><button class="new-article__post">등록</button></div>
+            </form>
+        </div>
+        <button class="open">올리기</button>
         <div class="content">
             <div class="article">
                 <img src="book.jpg" alt="book" class="article__img">
@@ -30,6 +34,14 @@
                     <div class="article__title">챗GPT : 마침내 찾아온 특이점</div>
                     <div class="article__author">반병현</div>
                     <div class="article__comment">인공지능의 발전, 인류가 풀어야 할 과제는 무엇인가.</div>
+                </div>
+            </div>
+            <div class="article">
+                <img src="book2.jpg" alt="book" class="article__img">
+                <div class="article__info">
+                    <div class="article__title">Do it! HTML+CSS+자바스크립트 웹 표준의 정석</div>
+                    <div class="article__author">고경희</div>
+                    <div class="article__comment">웹개발의 기초를 알려주는 책</div>
                 </div>
             </div>
         </div>
