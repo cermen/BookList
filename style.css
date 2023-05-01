@@ -1,11 +1,12 @@
 :root {
     --main-color: orange;
+    --content-color: #ffc966;
 }
 
 body {
     background-color: var(--main-color);
     font-family: "Nanum Gothic";
-    text-align: center;
+    margin: 0;
 }
 
 header {
@@ -21,52 +22,80 @@ header {
     margin-bottom: 0;
 }
 
-.section__form {
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+.section__form {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     margin: 0 auto;
-    width: 400px;
-    height: 300px;
+    width: 450px;
+    height: 320px;
+    background-color: var(--content-color);
     border: 3px solid black;
     border-radius: 12px;
+}
+
+.section__form > * {
+    margin: 0 auto;
+    width: 90%;
 }
 
 .new-article input {
     background-color: #ffedcc;
     border: 2px solid black;
+    border-radius: 6px;
+}
+
+.new-article__label {
+    margin-bottom: 4px;
+}
+
+.new-article input {
+    width: calc(100% - 6px);
+    margin-bottom: 4px;
 }
 
 .new-article__link input {
-    width: 80%;
     height: 24px;
 }
 
-.new-article__content span {
-    display: block;
-    margin: 4px 0;
-}
-
-.new-article__content input {
-    width: 90%;
+.new-article__comment input {
     height: 150px;
 }
 
 button {
-    position: relative;
     width: 100px;
     height: 40px;
+    margin: 0 auto;
     margin-top: 10px;
     background-color: black;
     color: white;
-    /* border: 2px solid gray; */
     box-shadow: 1px 1px gray;
+    border-radius: 4px;
     font-size: 14pt;
+}
+
+.section__form button {
+    position: relative;
+    left: calc(50% - 50px);
 }
 
 .open {
     margin-bottom: 10px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 12px;
+    margin: auto;
 }
 
 .article {
@@ -74,10 +103,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    width: 400px;
-    height: 200px;
-    background-color: #ffd280;
-    margin-bottom: 12px;
+    background-color: var(--content-color);
     border: 2px solid black;
     border-radius: 12px;
     padding: 16px;
@@ -91,4 +117,9 @@ button {
 
 .article__title {
     font-weight: bold;
+    font-size: 14pt;
+}
+
+.article__title {
+    font-size: 13pt;
 }
