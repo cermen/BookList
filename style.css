@@ -30,7 +30,7 @@ header {
 }
 
 .section__form {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -40,6 +40,10 @@ header {
     background-color: var(--content-color);
     border: 3px solid black;
     border-radius: 12px;
+}
+
+.hidden {
+    display: none;
 }
 
 .section__form > * {
@@ -87,8 +91,8 @@ button {
     left: calc(50% - 50px);
 }
 
-.open {
-    margin-bottom: 10px;
+.open-hide {
+    margin-bottom: 12px;
 }
 
 .content {
