@@ -9,3 +9,28 @@ openHide.addEventListener('click', () => {
         openHide.innerHTML = "올리기";
     }
 });
+
+const contentList = document.querySelector('.content');
+const add = document.querySelector('.new-article__post');
+add.addEventListener("click", () => {
+    const img = "img/book.jpg";
+    const title = document.querySelector('.link').value;
+    const comment = document.querySelector('.comment').value;
+
+    const newContent = `
+        <div class="article">
+            <img src=${img} alt="book" class="article__img" />
+            <div class="article__info">
+                <div class="article__title">
+                    ${title}
+                </div>
+                <div class="article__author"></div>
+                <div class="article__comment">
+                    ${comment}
+                </div>
+            </div>
+        </div>
+    `;
+
+    contentList.innerHTML += newContent;
+})
