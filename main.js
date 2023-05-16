@@ -31,6 +31,8 @@ add.addEventListener("click", () => {
             </div>
         </div>
     `;
-
     contentList.innerHTML += newContent;
+
+    document.querySelector('.link').value = '';
+    document.querySelector('.comment').value = '';
 })
