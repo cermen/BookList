@@ -14,7 +14,8 @@ const contentList = document.querySelector('.content');
 const add = document.querySelector('.new-article__post');
 add.addEventListener("click", () => {
     const img = "img/book.jpg";
-    const title = document.querySelector('.link').value;
+    const bookTitle = document.querySelector('.book-title').value;
+    const author = document.querySelector('.author').value;
     const comment = document.querySelector('.comment').value;
 
     const newContent = `
@@ -22,9 +23,11 @@ add.addEventListener("click", () => {
             <img src=${img} alt="book" class="article__img" />
             <div class="article__info">
                 <div class="article__title">
-                    ${title}
+                    ${bookTitle}
                 </div>
-                <div class="article__author"></div>
+                <div class="article__author">
+                    ${author}
+                </div>
                 <div class="article__comment">
                     ${comment}
                 </div>
@@ -33,6 +36,7 @@ add.addEventListener("click", () => {
     `;
     contentList.innerHTML += newContent;
 
-    document.querySelector('.link').value = '';
+    document.querySelector('.book-title').value = '';
+    document.querySelector('.author').value = '';
     document.querySelector('.comment').value = '';
 })

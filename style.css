@@ -35,8 +35,8 @@ header {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    width: 450px;
-    height: 320px;
+    width: 480px;
+    height: 370px;
     background-color: var(--content-color);
     border: 3px solid black;
     border-radius: 12px;
@@ -65,7 +65,7 @@ header {
     margin-bottom: 4px;
 }
 
-.link {
+.section__form input {
     height: 24px;
 }
 
