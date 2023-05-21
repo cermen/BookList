@@ -35,8 +35,8 @@ header {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    width: 450px;
-    height: 320px;
+    width: 480px;
+    height: 380px;
     background-color: var(--content-color);
     border: 3px solid black;
     border-radius: 12px;
@@ -65,7 +65,7 @@ header {
     margin-bottom: 4px;
 }
 
-.link {
+.section__form input {
     height: 24px;
 }
 
@@ -111,6 +111,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    height: 200px;
     background-color: var(--content-color);
     border: 2px solid black;
     border-radius: 12px;
@@ -124,7 +125,8 @@ button {
 }
 
 .article__info {
-    width: 250px;
+    /*width: 250px;*/
+    width: 100%;
 }
 
 .article__title {

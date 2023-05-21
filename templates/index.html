@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>독서록</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../static/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:wght@300&display=swap"
         rel="stylesheet"
     />
-    <script defer src="main.js"></script>
+    <script defer src="../static/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -22,9 +22,13 @@
     <section class="section">
         <div class="section__form hidden">
             <!-- <form action="" class="new-article"> -->
-                <div class="new-article__link">
-                    <div class="new-article__label">링크</div>
-                    <input type="text" class="link" />
+                <div class="new-article__title">
+                    <div class="new-article__label">제목</div>
+                    <input type="text" class="book-title" />
+                </div>
+                <div class="new-article__author">
+                    <div class="new-article__label">저자</div>
+                    <input type="text" class="author" />
                 </div>
                 <div class="new-article__comment">
                     <div class="new-article__label">느낀점</div>
